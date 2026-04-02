@@ -29,7 +29,6 @@ export default function Card({ card, listId, onEdit }) {
       >
         <h4 className="font-semibold text-gray-900 dark:text-white line-clamp-4">
           {card.title}
-          
         </h4>
       </div>
 

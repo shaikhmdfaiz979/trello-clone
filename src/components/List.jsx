@@ -70,18 +70,17 @@ export default function List({ list, onAddCard, onEditCard }) {
             No cards yet
           </div>
         ) : (
-          
           <SortableContext
             items={list.cards.map((card) => card.id)}
             strategy={verticalListSortingStrategy}
-            >
+          >
             {list.cards.map((card) => (
               <Card
                 key={card.id}
                 card={card}
                 listId={list.id}
                 onEdit={onEditCard}
-                />
+              />
             ))}
           </SortableContext>
         )}
